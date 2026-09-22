@@ -2,7 +2,7 @@ function ListaVoluntarios({ voluntarios = [] }) {
   if (voluntarios.length === 0) {
     return (
       <div className="bg-white p-6 rounded-xl border border-slate-100 text-center text-slate-500 shadow-sm">
-        <p className="text-sm">Nenhum voluntário cadastrado até o momento. 🙋‍♂️</p>
+        <p className="text-sm">Nenhum voluntário cadastrado até o momento.</p>
       </div>
     )
   }
@@ -17,7 +17,7 @@ function ListaVoluntarios({ voluntarios = [] }) {
           <div>
             <div className="flex items-center justify-between mb-2">
               <span className="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
-                🙋‍♂️ Voluntário
+                Voluntário
               </span>
               <span className="text-xs text-slate-400 font-mono">#{voluntario.id}</span>
             </div>
@@ -27,20 +27,20 @@ function ListaVoluntarios({ voluntarios = [] }) {
             </h4>
 
             {voluntario.email && (
-              <p className="text-slate-600 text-xs mb-2 flex items-center gap-1">
-                ✉️ <strong className="font-semibold">Contato:</strong> {voluntario.email}
+              <p className="text-slate-600 text-xs mb-2">
+                <strong className="font-semibold">Contato:</strong> {voluntario.email}
               </p>
             )}
 
             {voluntario.habilidades && (
               <p className="text-slate-500 text-sm mb-2">
-                🛠️ <strong className="font-semibold text-slate-700">Habilidades:</strong> {voluntario.habilidades}
+                <strong className="font-semibold text-slate-700">Habilidades:</strong> {voluntario.habilidades}
               </p>
             )}
 
             {voluntario.disponibilidade && (
               <p className="text-slate-500 text-sm mb-2">
-                ⏰ <strong className="font-semibold text-slate-700">Disponibilidade:</strong> {voluntario.disponibilidade}
+                <strong className="font-semibold text-slate-700">Disponibilidade:</strong> {voluntario.disponibilidade}
               </p>
             )}
           </div>
@@ -48,7 +48,7 @@ function ListaVoluntarios({ voluntarios = [] }) {
           <div className="border-t border-slate-100 pt-3 mt-3 flex items-center justify-between text-xs text-slate-400">
             <span>Cadastrado no portal</span>
             {voluntario.cidade && (
-              <span>📍 {voluntario.cidade}</span>
+              <span>Cidade: {voluntario.cidade}</span>
             )}
           </div>
         </div>

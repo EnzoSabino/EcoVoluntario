@@ -1,0 +1,31 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "email": "joao@email.com",
+      "senha": "123",
+      "tipoPessoa": "CPF",
+      "documento": "111.222.333-44",
+      "dataNascimento": "1995-05-10"
+    },
+    {
+      "id": "2",
+      "nome": "EcoEmpresa Soluções",
+      "email": "contato@ecoempresa.com",
+      "senha": "123",
+      "tipoPessoa": "CNPJ",
+      "documento": "12.345.678/0001-90",
+      "razaoSocial": "EcoEmpresa Ltda"
+    }
+  ],
+  "eventos": [
+    {
+      "id": "1",
+      "titulo": "Mutirão de Limpeza do Rio Local",
+      "descricao": "Ação comunitária para recolhimento de resíduos nas margens do rio.",
+      "data": "2026-09-15",
+      "criadorId": "2"
+    }
+  ]
+}
